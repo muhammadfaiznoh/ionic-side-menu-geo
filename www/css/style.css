@@ -1,1 +1,32 @@
-/* Empty. Add your own CSS if you like */
+/****************************
+ * MENU
+ ***************************/
+
+.user-image-container {
+  text-align: center;
+}
+
+.user-image {
+  border-radius: 50%;
+  border: 4px solid white;
+  height: 80px;
+}
+
+.item-avatar .item-content {
+  background-color: #6ac0ff !important;
+}
+
+.greeting {
+  display: block;
+  text-align: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 2px;
+  box-shadow: 0px 1px 1px black;
+  font-size: 12px !important;
+}
+
+.transparent {
+  background-color: transparent;
+  background-image:none;
+}
