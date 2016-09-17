@@ -3,7 +3,11 @@
  *********************************/
 
 app.controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
-  var options = {timeout: 10000, enableHighAccuracy: true};
+  // Geolocation options
+  var options = {
+    timeout: 10000,
+    enableHighAccuracy: true
+  };
   $scope.located = false;
  
   $cordovaGeolocation.getCurrentPosition(options).then(function(position) {
@@ -31,6 +35,6 @@ app.controller('MapCtrl', function($scope, $state, $cordovaGeolocation) {
       });
     });
   }, function(error){
-    alert("Could not get location");
+    alert("Unexpected error, could not get location ...");
   });
 });
